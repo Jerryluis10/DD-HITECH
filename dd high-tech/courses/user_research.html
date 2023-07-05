@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../courses/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $('a').click(function() {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000); // Adjust the animation speed as needed
+            return false;
+          }
+        }
+      });
+    });
+  
+    const carousel = document.querySelector('.carousel');
+          const carouselImages = document.querySelector('.carousel-images');
+          const prevButton = document.querySelector('#prevButton');
+          const nextButton = document.querySelector('#nextButton');
+  
+          let translateX = 0;
+          const slideWidth = carousel.offsetWidth / 4;
+          const maxTranslateX = -slideWidth * (carouselImages.childElementCount - 4);
+  
+          prevButton.addEventListener('click', () => {
+              if (translateX < 0) {
+                  translateX += slideWidth;
+                  carouselImages.style.transform = `translateX(${translateX}px)`;
+              }
+          });
+  
+          nextButton.addEventListener('click', () => {
+              if (translateX > maxTranslateX) {
+                  translateX -= slideWidth;
+                  carouselImages.style.transform = `translateX(${translateX}px)`;
+              }
+          });
+  </script>
+
+  <nav>
+    <div class="wrapper" id="start">
+      <div class="logo"><a href=""><img src="../img/dd-hitech_logo-r.png"></a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+       <li>
+        <form class="nav-search">
+          <input class="nav-search-content" type="search" placeholder="Search..." aria-label="Search">
+          <button class="nav-search-btn" type="submit">Search</button>
+         </form>
+        </li>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="#contact">Contact us</a></li>
+        <li>
+          <a href="#" class="desktop-item">Categories</i>
+            <span class="material-icons-sharp">expand_more</span>
+          </a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Services<span class="material-icons-sharp">expand_more</span></label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row1">
+                <img src="../img/user research2.jpg" alt="">
+              </div>
+              <div class="row1">
+                <header>CONTACT US</header>
+                <ul class="mega-links">
+                  <li><a href="../index.html">Telephone</a></li>
+                  <li><a href="../index.html">Email</a></li>
+                  <li><a href="../index.html">Inquiry Status</a></li>
+                  <li><a href="../index.html">Customer Feedback</a></li>
+                  <li><a href="../index.html">WhatsApp</a></li>
+                </ul>
+              </div>
+              <div class="row1">
+                <header>COURSES</header>
+                <ul class="mega-links">
+                  <li><a href="../courses/web_devpt.html">Web Development</a></li>
+                  <li><a href="../courses/app_devpt.html">App Development</a></li>
+                  <li><a href="../courses/database.html">Database Systems</a></li>
+                  <li><a href="../courses/user_research.html">User research and Analysis</a></li>
+                  <li><a href="../courses/user_experience.html">User experience(UX)</a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+              <div class="row1">
+                <header>COURSES</header>
+                <ul class="mega-links">
+                  <li><a href="#"></a></li>
+                  <li><a href="../courses/brand_identity.html">Design for Brand Identity</a></li>
+                  <li><a href="../courses/electrical_circuit.html">Electrical circuit</a></li>
+                  <li><a href="../courses/control_system.html">Control System</a></li>
+                  <li><a href="../courses/robotics.html">Robotics and Automation</a></li>
+                </ul>
+              </div>
+            </div>  
+          </div>
+      </li>
+      <a href="../register/index.php" class="start" style="margin-top: 1%;"><span style="background-color: #14abe5; color: white;padding: 10px; border-radius: 10px;
+        ">Get Started</span></a>
+        <!--<button type="button" class="btn-subscribe">Subscribe</button>----->
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+
+      <section class="video-section">
+        <div class="video-container">
+       <img src="../img/user research2.jpg" alt="">
+      </div>
+      <div>
+      <main>
+        <h1>USER RESEARCH AND ANALYSIS</h1>
+      </main>
+     </div>
+     </section>
+
+     <section class="middle">
+      <div class="p-back">
+        <h3>USER RESEARCH AND ANALYSIS</h3>
+        <p class="first-p">User research and analysis is a systematic approach used to understand the needs, behaviors, and <br>
+             preferences of users in order to inform the design and development of products or services. It involves <br>
+              gathering qualitative and quantitative data through methods such as interviews, surveys, observations, <br>
+               and usability testing. The collected data is then analyzed and interpreted to extract insights and <br>
+                patterns, which are used to make informed decisions about user experience improvements, feature prioritization, <br>
+                 and overall product strategy. User research and analysis help ensure that products are user-centered and aligned <br>
+                  with user expectations and goals.</p>
+        <a href="../register/index.php">GET STARTED</a>
+      </div>
+     </section>
+
+     <section class="products">
+         <h2>Contact</h2>
+        <div class="wares">
+         <a href="../index.html">
+          <div class="soft">
+            <span class="material-icons-sharp">phone_in_talk</span>
+            <h3>Telephone</h3>
+          </div>
+         </a>
+          <a href="">
+            <div class="soft">
+              <span class="material-icons-sharp">forward_to_inbox</span>
+              <h3>Email</h3>
+            </div>
+          </a>
+          <a href="">
+            <div class="soft">
+              <span class="material-icons-sharp">desktop_windows</span>
+              <h3>Customer Feedback</h3>
+            </div>
+          </a>
+           <a href="">
+            <div class="soft">
+              <span class="material-icons-sharp">record_voice_over</span>
+              <h3>Addressing the CEO, <br> your voice is vital.</h3>
+            </div>
+           </a>
+      
+       </div>
+     </section>
+
+
+     </section>
+     <footer id="contact">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>DD HITECH</h3>
+          <p>3 Nwachukwu drive by<br>canal estate okota<br>Lagos, State <br>Phone: +2348092451844<br>Phone: +2348055464138<br>Email: info@ddhitech.com<br>Email: contact@ddhitech.com</p>
+        </div>
+        <div class="copy">
+          <p>&copy ddhitech.com </p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

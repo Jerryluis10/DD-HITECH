@@ -1,0 +1,321 @@
+body{
+    font-family: sans-serif;
+    display: contents;
+}
+.backgd{
+    height: 104vh;
+}
+
+.sideimage{
+    margin-top: -2%;
+    margin-left: 1%;
+}
+.sideimage img{
+    width: 15%;
+}
+.into{
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 9%;
+    margin-left: 3%;
+    color: white;
+}
+.into h1{
+    font-size: 50px;
+    color: black;
+}
+.into h4{
+    font-size: 18px;
+    color: black;
+}
+.form-box{
+    width: 70%;
+    margin-left: 30%;
+    margin-top: -20%;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: linear-gradient(to right, #124e91, #14abe5);
+}
+.title h1{
+    color: white;
+}
+.inputs-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18rem;
+    margin-left: -20%;
+}
+.inp-fstline input{
+    margin-top: 5%;
+    padding: 15px;
+    width: 200%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.inp-secline input{
+    margin-top: 5%;
+    padding: 15px;
+    width: 200%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.inp-secline select{
+    padding: 15px;
+    width: 217%;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: 5%;
+}
+.inp-secline option{
+    padding: 5px;
+    border: 1px solid black;
+}
+.inp-secline option:hover{
+    background-color: #124e91;
+    color: white;
+}
+.submit-bt button{
+   margin-top: 5%;
+   padding: 15px;
+   width: 40%;
+   border: 2px solid white;
+   border-radius: 10px;
+   font-size: 20px;
+   background-color: white;
+}
+.submit-bt button:hover{
+    background-color: #14abe5;
+    color: white;
+    border: none;
+}
+
+
+/*========================================================MEDIA QUERIES======================================*/
+
+@media screen and (max-width: 1200px){
+    .backgd{
+        padding-bottom: 50px;
+    }
+    .sideimage img{
+        width: 20%;
+    }
+    .into{
+        width: 100%;
+        margin-left: 0;
+        margin-top: -2%;
+    }
+    .form-box{
+        margin-left: 5%;
+        margin-top: 3%;
+        width: 90%;
+        border-radius: 50px;
+    }
+    .inputs-flex{
+        gap: 9rem;
+        margin-left: -19%;
+    }
+    .inp-fstline input{
+        width: 150%;
+    }
+    .inp-secline input{
+        width: 150%;
+    }
+    .inp-secline select{
+        width: 165%;
+    }
+    .submit-bt button{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 805px){
+    .backgd{
+        width: 100%;
+    }
+    .inputs-flex{
+        margin-left: -39%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .inp-fstline input{
+        width: 153%;
+    }
+    .inp-secline{
+        margin-left: 4%;
+    }
+    .inp-secline input{
+        width: 140%;
+    }
+    .inp-secline select{
+        width: 155%;
+    }
+    .submit-bt button{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 780px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -54%;
+    }
+    .inp-fstline input{
+        width: 275%;
+    }
+    .inp-secline{
+        margin-left: 2%;
+    }
+    .inp-secline input{
+        width: 249%;
+    }
+    .inp-secline select{
+        width: 264%;
+    }
+}
+@media screen and (max-width: 705px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -47%;
+    }
+    .inp-fstline input{
+        width: 198%;
+    }
+    .inp-secline{
+        margin-left: 3%;
+    }
+    .inp-secline input{
+        width: 179%;
+    }
+    .inp-secline select{
+        width: 194%;
+    }
+}
+@media screen and (max-width: 768px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -41%;
+    }
+    .inp-fstline input{
+        width: 157%;
+    }
+    .inp-secline{
+        margin-left: 4.5%;
+    }
+    .inp-secline input{
+        width: 141%;
+    }
+    .inp-secline select{
+        width: 156%;
+    }
+}
+@media screen and (max-width: 791px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -41%;
+    }
+    .inp-fstline input{
+        width: 226%;
+    }
+    .inp-secline{
+        margin-left: 2%;
+    }
+    .inp-secline input{
+        width: 204%;
+    }
+    .inp-secline select{
+        width: 218%;
+    }
+}
+@media screen and (max-width: 545px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -39%;
+    }
+    .inp-fstline input{
+        width: 153%;
+    }
+    .inp-secline{
+        margin-left: 4.5%;
+    }
+    .inp-secline input{
+        width: 138%;
+    }
+    .inp-secline select{
+        width: 153%;
+    }
+}
+@media screen and (max-width: 380px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -35%;
+    }
+    .inp-fstline input{
+        width: 145%;
+    }
+    .inp-secline{
+        margin-left: 4%;
+    }
+    .inp-secline input{
+        width: 131%;
+    }
+    .inp-secline select{
+        width: 147%;
+    }
+}
+@media screen and (max-width: 360px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -35%;
+    }
+    .inp-fstline input{
+        width: 141%;
+    }
+    .inp-secline{
+        margin-left: 4%;
+    }
+    .inp-secline input{
+        width: 128%;
+    }
+    .inp-secline select{
+        width: 143%;
+    }
+}
+@media screen and (max-width: 290px){
+    .backgd{
+        padding-bottom: 125px;
+    }
+    .inputs-flex{
+        margin-left: -13%;
+    }
+    .inp-fstline input{
+        width: 100%;
+    }
+    .inp-secline{
+        margin-left: 7%;
+    }
+    .inp-secline input{
+        width: 90.7%;
+    }
+    .inp-secline select{
+        width: 106%;
+    }
+}
